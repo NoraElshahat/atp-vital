@@ -36,6 +36,7 @@ const getTemsUsers = async (req, res) => {
       .send({ message: 'please , give me user id and team id' });
   }
 };
+
 // get users of one team
 const usersTeam = async (req, res) => {
   const teamId = req.params.team_id;
