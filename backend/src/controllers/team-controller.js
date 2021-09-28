@@ -4,7 +4,7 @@ const addTeam = async (req, res) => {
   const newTeam = await new Team(req.body);
   if (newTeam) {
     await newTeam.save();
-    return res.status(200).send({ user: newTeam });
+    return res.status(200).send({ team: newTeam });
   } else {
     return res.status(400).send({ message: 'something went wrong' });
   }
